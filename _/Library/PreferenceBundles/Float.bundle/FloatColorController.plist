@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>title</key>
+	<string>Float Color</string>
+	<key>items</key>
+	<array>
+
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Float Color Picker</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.irepo.float</string>
+			<key>key</key>
+			<string>color</string>
+			<key>label</key>
+			<string>Use Custom Color</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>apply</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Apply</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Current Color</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>curentColor</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>cellClass</key>
+			<string>floatSelectedColorCell</string>
+			<key>height</key>
+			<integer>50</integer>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Be sure to hit Apply after you're done</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>floatColorPicker</string>
+			<key>cell</key>
+			<string>PSStaticTextCell</string>
+			<key>cellClass</key>
+			<string>FloatColorPickerCell</string>
+			<key>height</key>
+			<integer>370</integer>
+		</dict>
+
+	</array>
+</dict>
+</plist>

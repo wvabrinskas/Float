@@ -1,0 +1,10 @@
+{
+    entry = {
+	bundle = Float;
+	cell = PSLinkCell;
+	detail = FloatListController;
+	icon = Float.png;
+	isController = 1;
+	label = Float;
+    };
+}

@@ -1,0 +1,10 @@
+Package: com.irepo.float
+Name: Float
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Depiction: https://theirepo.com/cydia/depictions/Float.php
+Description: A full screen floating control center with a fun blur animation. 
+Maintainer: william vabrinskas
+Author: william vabrinskas <wvabrinskas@gmail.com>
+Section: Tweaks
