@@ -36,7 +36,31 @@
             <key>label</key>
             <string>Background Color</string>
         </dict>
-	</array>
+        <dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Tweak Battle 2015 Submission!</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Float© 2015 William Vabrinskas              wvabrinskas@gmail.com</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>John Rickman             rickburgen@gmail.com</string>
+			<key>isStaticText</key>
+			<true/>
+		</dict>
+		</array>
 	<key>title</key>
 	<string>Float</string>
 </dict>

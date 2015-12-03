@@ -3,7 +3,7 @@
 	bundle = Float;
 	cell = PSLinkCell;
 	detail = FloatListController;
-	icon = Float.png;
+	icon = icon.png;
 	isController = 1;
 	label = Float;
     };
