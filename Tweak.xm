@@ -135,7 +135,11 @@ static void PreferencesChangedCallback() {
 
 -(void)layoutSubviews {
 	PreferencesChangedCallback();
-	%orig;
+	containerView = MSHookIvar<SBControlCenterContentContainerView *>(self,"_contentContainerView");
+	UIView *back = containerView.subviews[0];
+	UIView *test = containerView.subviews[1];
+	UIView *view = MSHookIvar<UIView *>(self,"_darkeningView");
+
 if (enabled) {
 	Class UIBackDropView = objc_getClass("_UIBackdropView");
     if (UIBackDropView)
@@ -156,16 +160,18 @@ if (enabled) {
 	    customBackdrop.alpha = 0.0;
 	  
      } 
-	UIView *view = MSHookIvar<UIView *>(self,"_darkeningView");
 	view.alpha = 0.0;
-	containerView = MSHookIvar<SBControlCenterContentContainerView *>(self,"_contentContainerView");
-//	containerView.contentHeight = 400;
-	UIView *back = containerView.subviews[0];
-	UIView *test = containerView.subviews[1];
 	[self insertSubview:customBackdrop atIndex:0];
 	back.alpha = 0.0;
 	test.alpha = 0.0;
+  } else {
+  	[customBackdrop removeFromSuperview];
+  	view.alpha = 1.0;
+  	back.alpha = 1.0;
+  	test.alpha = 1.0;
   }
+  	%orig;
+
 }
 
 - (void)_updateDarkeningFrame {
